@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "libdasample_in.h": "c"
+        "libdasample_in.h": "c",
+        "parson.h": "c"
     }
 }

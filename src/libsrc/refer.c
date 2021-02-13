@@ -10,13 +10,11 @@
 
 const int (*referFunc[])(void *, int, char **, char **) = {
     referSingleData,
-    referArrayData
-    };
+    referArrayData};
 
 const char *sql_str[] = {
     "select * from tb_test",
-    "select * from arrayData"
-};
+    "select * from arrayData"};
 
 int refer(int schemaNo, void *buffer)
 {
@@ -45,7 +43,7 @@ int refer(int schemaNo, void *buffer)
         conn,
         sql_str[schemaNo],
         referFunc[schemaNo], // callback method
-        &info,        // parameter of callback
+        &info,               // parameter of callback
         &err_msg);
 
     if (rtc != SQLITE_OK)
