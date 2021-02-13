@@ -7,7 +7,7 @@ LDFLAGS := -shared
 DESTLIB  =  /usr/local/lib
 DESTINC  =  /usr/local/include
 
-SRCS := refer.c existFile.c
+SRCS := refer.c existFile.c referSingleData.c referArrayData.c
 OBJS := $(SRCS:.c=.o)
 
 all: $(TARGET).1.0

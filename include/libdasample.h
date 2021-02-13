@@ -8,6 +8,16 @@ typedef struct TEST_SCHEMA
     char testChar[32];
 } TEST_SCHEMA;
 
-int refer(void *buffer);
+typedef struct ARRAYDATA
+{
+    char name[32];
+    struct
+    {
+        char name[32];
+        int data;
+    } array[2];
+} ARRAYDATA;
+
+int refer(int schemaNo, void *buffer);
 
 #endif
